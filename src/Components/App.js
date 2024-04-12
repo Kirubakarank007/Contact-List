@@ -21,7 +21,7 @@ function App() {
 
   const removeContactHandler =(id) =>{
     const newContactList=contacts.filter((contact)=>{
-      return contacts.id !==id;
+      return contact.id !==id;
     });
     setContacts(newContactList);
   };

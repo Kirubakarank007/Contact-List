@@ -5,9 +5,10 @@ function ContactList(props){
     console.log(props);
     
     const deleteContactHandler=(id)=>{
-        props.getContactId(id)
+        console.log('contact deleted');
+        props.getContactId(id);
     };
-    console.log('enter coontact list')
+    console.log('enter contact list')
     const renderContactList=props.contacts.map((contact)=>{
         return (
             <ContactCard 
