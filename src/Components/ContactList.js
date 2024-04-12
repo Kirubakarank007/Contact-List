@@ -9,7 +9,12 @@ function ContactList(props){
         props.getContactId(id);
     };
     console.log('enter contact list')
-    const renderContactList=props.contacts.map((contact)=>{
+    const contacts=[{
+        id:'1',
+        name:"kk",
+        email:'kiruba'
+    }]
+    const renderContactList=contacts.map((contact)=>{
         return (
             <ContactCard 
             contact={contact} 
@@ -20,9 +25,9 @@ function ContactList(props){
         )
     })
     return (
-       
-        <div className="ui celled list">
-            {renderContactList}
+       <div className="main">
+        <h2>Contact List</h2>
+        <div className="ui celled list">{renderContactList}</div>
         </div>
     );
 };
