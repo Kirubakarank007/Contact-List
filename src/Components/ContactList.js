@@ -8,12 +8,12 @@ function ContactList(props){
         props.getContactId(id)
     };
     console.log('enter coontact list')
-    const renderContactList=props.contacts.map((contacts)=>{
+    const renderContactList=props.contacts.map((contact)=>{
         return (
             <ContactCard 
-            contacts={contacts} 
+            contact={contact} 
             clickHandler={deleteContactHandler}
-            key={contacts.id}
+            key={contact.id}
             />
             
         )

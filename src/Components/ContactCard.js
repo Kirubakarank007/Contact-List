@@ -1,7 +1,7 @@
 import React from "react";
 import user from '../Images/user.jpg'
 const ContactCard = (props) =>{
-    const {id,name,email}=props.contacts
+    const {id,name,email}=props.contact;
     console.log('enterd in Contact card')
     return(
         <div className="item">
