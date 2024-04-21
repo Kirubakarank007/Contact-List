@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 class AddContact extends React.Component {
   state = {
@@ -14,6 +15,7 @@ class AddContact extends React.Component {
     }
     this.props.addContactHandler(this.state);
     this.setState({ name: "", email: "" });
+    
   };
   render() {
     return (
@@ -41,6 +43,9 @@ class AddContact extends React.Component {
             />
           </div>
           <button className="ui button blue">Add</button>
+          <Link to='/'>
+          <button className="ui button green">home</button>
+          </Link>
         </form>
       </div>
     );

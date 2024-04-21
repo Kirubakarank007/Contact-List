@@ -9,13 +9,13 @@ function ContactList(props){
         console.log('contact deleted');
         props.getContactId(id);
     };
-    console.log('enter contact list')
-    const contacts=[{
-        id:'1',
-        name:"kk",
-        email:'kiruba'
-    }]
-    const renderContactList=contacts.map((contact)=>{
+    // console.log('enter contact list')
+    // const contacts=[{
+    //     id:'1',
+    //     name:"kk",
+    //     email:'kiruba'
+    // }]
+    const renderContactList=props.contacts.map((contact)=>{
         return (
             <ContactCard 
             contact={contact} 
